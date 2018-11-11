@@ -16,7 +16,7 @@ X_test = data['tstX']
 num_dims = X_train.shape[0]
 
 # ==============================================================================
-# Question 1a: K NEAREST NEIGHBOURS, effect of value k
+# Experiment 1: K NEAREST NEIGHBOURS, effect of value k
 # ==============================================================================
 def kNN():
     K = 50
@@ -77,7 +77,7 @@ def kNN():
     print('Best K = {}, Accuracy = {}'.format(best_k, accuracy_best_k))
 
 # ==============================================================================
-# Question 1b: LINEAR REGRESSION, Bias vs No Bias
+# Experiment 2: LINEAR REGRESSION, Bias vs No Bias
 # ==============================================================================
 def linear_regression():
     obj_1 = lr.Linear_Regression()
@@ -93,7 +93,7 @@ def linear_regression():
     print('accuracy (bias) =', accuracy_2 * 100)
 
 # ==============================================================================
-# Question 1d: LOGISTIC REGRESSION (ONE VS ONE), best regularisation coefficient
+# Experiment 3: LOGISTIC REGRESSION (ONE VS ONE), best regularisation coefficient
 # ==============================================================================
 def logistic_regression_ovo():
     accuracy_dict = {}
@@ -137,7 +137,7 @@ def logistic_regression_ovo():
     print('Best lambda = {}, Accuracy = {}'.format(best_l, accuracy))
 
 # ==============================================================================
-# Question 3a: K-MEANS VS K-MEANS++ (SEGMENTATION)
+# Experiment 4: K-MEANS VS K-MEANS++ (SEGMENTATION)
 # ==============================================================================
 def seg_comparison():
     img = cv2.imread('data/peppers.bmp')
